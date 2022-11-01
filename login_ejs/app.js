@@ -17,7 +17,7 @@ const passportSetup = require("./passport")
 const authRoute = require("./routes/auth")
 //JWT SECRET
 const JWT_SECRET = "sadajhasghkdrakwhufbalfuiaffoiufdlufas12345@##$%^%afggahyfa"
-mongoose.connect('mongodb://localhost:27017/login-app-db',{
+mongoose.connect('mongodb+srv://ajith:<password>@cluster0.vvuc3sl.mongodb.net/?retryWrites=true&w=majority',{
     useNewUrlParser:true,
     useUnifiedTopology:true,
      //make this true
