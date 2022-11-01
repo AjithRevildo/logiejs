@@ -15,6 +15,8 @@ const jwt = require("jsonwebtoken");
 const  passport  = require("passport");
 const passportSetup = require("./passport")
 const authRoute = require("./routes/auth")
+
+app.use('/',express.static(path.join(__dirname,'static')))
 //JWT SECRET
 const JWT_SECRET = "sadajhasghkdrakwhufbalfuiaffoiufdlufas12345@##$%^%afggahyfa"
 mongoose.connect('mongodb+srv://ajith:<password>@cluster0.vvuc3sl.mongodb.net/?retryWrites=true&w=majority',{
